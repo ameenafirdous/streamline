@@ -5,11 +5,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 
 # Load Excel dataset (from Day 4)
-df = pd.read_excel("reviews.xlsx")  # Make sure the file is in the same folder
-uploaded_file = st.file_uploader("Upload your Excel file", type=["xlsx"])
-if uploaded_file:
-    df = pd.read_excel(uploaded_file)
-    st.write(df)
+df = pd.read_excel("reviews.xlsx")  # Make sure the file is in the same fol
 # Prepare data
 X = df['review']           # reviews column
 y = df['sentiment']        # sentiment column (1=Positive, 0=Negative)
