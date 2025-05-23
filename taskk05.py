@@ -47,4 +47,4 @@ if st.button("Predict"):
             st.error("Sentiment: Negative 😞")
             st.write("Oops! That sounds like a negative review.")
 
-        st.write(f"Confidence Score: {confidence:.2f}")
+        st.write(f"Confidence Score: {confidence:.2f}*100")
