@@ -5,7 +5,8 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 
 # Load Excel dataset (from Day 4)
-df = pd.read_excel("reviews.xlsx")  # Make sure the file is in the same fol
+df = pd.read_excel("imdb_sample_reviews.xlsx")  # Make sure the file is in the same folder
+
 # Prepare data
 X = df['review']           # reviews column
 y = df['sentiment']        # sentiment column (1=Positive, 0=Negative)
@@ -46,5 +47,5 @@ if st.button("Predict"):
         else:
             st.error("Sentiment: Negative 😞")
             st.write("Oops! That sounds like a negative review.")
-            
-  st.write(f"Confidence Score: {confidence:.2f}")
+
+        st.write(f"Confidence Score: {confidence:.2f}")
