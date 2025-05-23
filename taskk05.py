@@ -5,7 +5,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 
 # Load Excel dataset (from Day 4)
-df = pd.read_excel("C:\Users\DELL\OneDrive\Documents\miniprojec\reviews.xlsx")  # Make sure the file is in the same folder
+df = pd.read_excel("reviews.xlsx")  # Make sure the file is in the same folder
 
 # Prepare data
 X = df['review']           # reviews column
